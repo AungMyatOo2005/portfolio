@@ -3,7 +3,7 @@ import ProjectList from "./ProjectList";
 
 const Project = ({ isDarkMode }) => {
   return (
-    <div className="py-20 px-32">
+    <div className="py-20">
       <div>
         <h2
           className={`${
@@ -20,7 +20,7 @@ const Project = ({ isDarkMode }) => {
           Explore the projects I've worked on so far
         </p>
       </div>
-      <ProjectList isDarkMode={isDarkMode} />
+      <ProjectList isDarkMode={isDarkMode}/>
     </div>
   );
 };
