@@ -79,6 +79,7 @@ const projects = [
     readMeText:
       "My personal website.I created this website to display my profile,skill and project.",
     createBy: "React Js,Tailwind",
+    site_url: "https://www.youtube.com/watch?v=XhoWXhyuW_I&t=242s",
     repo_url: "https://github.com/AungMyatOo2005/portfolio",
   },
   {
