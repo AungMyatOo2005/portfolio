@@ -1,0 +1,204 @@
+:root {
+  --activeText: white;
+  --hoverText: rgb(194, 189, 189);
+  --background: #161616;
+  --bottom-border: #f7d557;
+}
+.light-theme {
+  --activeText: black;
+  --hoverText: rgb(75, 75, 75);
+  --background: whitesmoke;
+  --bottom-border: #0074cc;
+}
+
+body {
+  background: var(--background);
+  transition: background-color 0.2s ease-in-out;
+}
+nav ul a.active {
+  color: var(--activeText);
+}
+nav ul a:not(.active):hover {
+  color: var(--hoverText);
+}
+nav ul {
+  position: relative;
+  gap: 15px;
+}
+nav .bar {
+  position: absolute;
+  height: 2px;
+  background-color: var(--bottom-border);
+  bottom: -6px;
+  transition: 0.3s;
+  left: 0px;
+  width: 46px;
+}
+
+nav .first-ul a:nth-child(1).active ~ .bar {
+  left: 0px;
+  width: 46px;
+}
+nav .first-ul a:nth-child(2).active ~ .bar {
+  left: 59px;
+  width: 45.06px;
+}
+nav .first-ul a:nth-child(3).active ~ .bar {
+  left: 119.06px;
+  width: 50.67px;
+}
+
+nav .first-ul a:nth-child(1):hover ~ .bar {
+  left: 0px;
+  width: 46px;
+}
+nav .first-ul a:nth-child(2):hover ~ .bar {
+  left: 59px;
+  width: 45.06px;
+}
+nav .first-ul a:nth-child(3):hover ~ .bar {
+  left: 119.06px;
+  width: 50.67px;
+}
+
+.toggle {
+  animation: slideToggle 0.5s cubic-bezier(0.25, 0.985, 0.32, 1.275) both;
+}
+@keyframes slideToggle {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.light-gradient-text {
+  background: #000000;
+  background: linear-gradient(to right, #000000 35%, #0074cc 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dark-gradient-text {
+  background: #ffffff;
+  background: linear-gradient(to right, #ffffff 35%, #f7d557 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.animate-icon {
+  animation: wiggleAnimation 0.5s infinite ease-in-out;
+}
+@keyframes wiggleAnimation {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+.animate-text {
+  position: relative;
+}
+.animate-text::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: var(--background);
+  animation: AnimateText 3.5s steps(13, start) infinite;
+  border-left: 3px solid var(--hoverText);
+}
+@keyframes AnimateText {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.animate-img {
+  animation: ImgAnimation 0.7s ease-in-out;
+}
+@keyframes ImgAnimation {
+  0% {
+    transform: translateX(300px);
+    opacity: 0.2;
+  }
+  100% {
+    /* transform: translateX(0); */
+    opacity: 1;
+  }
+}
+.animate-text-box {
+  animation: TextBoxAnimation 0.7s ease-in-out;
+}
+@keyframes TextBoxAnimation {
+  0% {
+    transform: translateY(300px);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.lvl {
+  animation: LvlAnimation 0.1s ease-in-out;
+}
+@keyframes LvlAnimation {
+  0% {
+    bottom: -20px;
+  }
+  100% {
+    bottom: -10px;
+  }
+}
+.about-img-animation {
+  animation: AboutImg 0.5s ease-in-out;
+}
+@keyframes AboutImg {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.first-about-text {
+  animation: AnimateAboutText 0.5s ease-in-out;
+}
+.second-about-text {
+  animation: AnimateAboutText 0.8s ease-in-out;
+}
+@keyframes AnimateAboutText {
+  0% {
+    transform: translateX(300px);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.techAndTools {
+  animation: AnimateTechAndTools 0.3s ease-in;
+}
+
+@keyframes AnimateTechAndTools {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
