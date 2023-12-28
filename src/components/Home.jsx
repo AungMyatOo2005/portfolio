@@ -56,6 +56,7 @@ const Home = ({ isDarkMode }) => {
         </div>
         <div className="w-[250px] sm:w-[300px] z-5">
           <img
+            loading="lazy"
             src={me}
             className={` w-full object-cover rounded-full border-4 animate-img md:translate-x-0 sm:translate-x-[120px] ${
               isDarkMode

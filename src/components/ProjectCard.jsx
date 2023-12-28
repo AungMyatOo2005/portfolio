@@ -43,6 +43,7 @@ const ProjectCard = ({ project, isDarkMode }) => {
             <img
               src={isDarkMode ? gitOutlineWhite : gitOutlineDark}
               className="w-[25px]"
+              loading="lazy"
             />
           </a>
           {project.site_url && (

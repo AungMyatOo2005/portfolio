@@ -30,6 +30,7 @@ const About = ({ isDarkMode }) => {
         <div className="mt-16 ss:mx-6 flex md:flex-row flex-col justify-between gap-5 items-center">
           <img
             src={me}
+            loading="lazy"
             className="w-[70%] sm:w-[500px] md:w-[300px] md:h-[300px] rounded-full object-cover about-img-animation z-[1]"
           />
           <div
