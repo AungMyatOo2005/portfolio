@@ -13,6 +13,8 @@ import {
   expenseTracker,
   weatherApp,
   recipeApp,
+  dailyBlog,
+  exchangeApp,
 } from "../assets";
 
 const techStacks = [
@@ -121,6 +123,25 @@ const projects = [
     createBy: "HTML,CSS,Js,TheMealDB API",
     site_url: "https://aungmyatoo2005.github.io/recipe-app/",
     repo_url: "https://github.com/AungMyatOo2005/recipe-app.git",
+  },
+  {
+    id: 6,
+    posterPath: exchangeApp,
+    siteName: "Exchange App",
+    readMeText:
+      "Money Exchange Application.User can compare exchange rate from many countries.",
+    createBy: "React Js,Tailwind,ExchangeRate API",
+    site_url: "https://aungmyatoo2005.github.io/exchange-app/",
+    repo_url: "https://github.com/AungMyatOo2005/exchange-app.git",
+  },
+  {
+    id: 7,
+    posterPath: dailyBlog,
+    siteName: "Daily Blog",
+    readMeText:
+      'I created this web page by react ,tailwindcss and atc...Firstly,please commend in terminal "npm run dev"Secondly,please commentd in next terminal "npm run json-server" In the website user can register and login.If user ar unauthorized user can\'t reach profile page and he can see only last 8 post ,BTW I was use pagination sir.Authorized user can post,edit and delete  his post and under all comments of his posts.He can commend in other users posts.He can delete and edit his comment (he only can edit),Day Mode and Night Mode for user friendly .Authorize user can reach profile page and he will edit his personal details.User can logout.Thanks for reading readme file sir.I have tried my best.',
+    createBy: "React Js,Tailwind,Json Server",
+    repo_url: "https://github.com/AungMyatOo2005/exchange-app.git",
   },
 ];
 

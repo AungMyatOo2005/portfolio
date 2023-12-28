@@ -12,6 +12,8 @@ import movieApp from "./movie_app.png";
 import expenseTracker from "./expense_tracker.png";
 import weatherApp from "./weather_app.png";
 import recipeApp from "./recipe_app.png";
+import dailyBlog from "./daily_blog.png";
+import exchangeApp from "./exchange_app.png";
 export {
   html,
   css,
@@ -27,4 +29,6 @@ export {
   expenseTracker,
   weatherApp,
   recipeApp,
+  dailyBlog,
+  exchangeApp,
 };

@@ -45,12 +45,18 @@ const ProjectCard = ({ project, isDarkMode }) => {
               className="w-[25px]"
             />
           </a>
-          <a href={project.site_url} target="_blank" className="cursor-pointer">
-            <img
-              src={isDarkMode ? resizeWhite : resizeDark}
-              className="w-[25px]"
-            />
-          </a>
+          {project.site_url && (
+            <a
+              href={project.site_url}
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <img
+                src={isDarkMode ? resizeWhite : resizeDark}
+                className="w-[25px]"
+              />
+            </a>
+          )}
         </div>
       </div>
     </div>
